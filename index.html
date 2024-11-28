@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        The Event Company
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+          <a href="https://eventos.example.com" class="nav-brand">The Event Company</a>
+          <nav>
+            <a href="https://eventos.example.com/eventos" class="nav-link">Eventos</a>
+            <a href="https://eventos.example.com/criar" class="nav-link">Criar Evento</a>
+            <a href="https://eventos.example.com/perfil" class="nav-link">Meu Perfil</a>
+            <a href="https://eventos.example.com/sobre" class="nav-link">Sobre</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <h1>The Event Company</h1>
+    <section class="event-form">
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome do Evento</label><label class="validation-error hide" id="fullNameValidationError">Esse espaço precisa ser preenchido.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Data e Hora</label>
+                        <input type="datetime-local" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Local</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Descrição</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label>Participantes</label>
+                        <input type="text" name="city2" id="city2">
+                    </div>
+                   
+                        
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Adicionar Evento">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Nome do Evento</th>
+                            <th>Data e Hora</th>
+                            <th>Local</th>
+                            <th>Descrição</th>
+                            <th>Participantes</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </section>
+
+    
+  
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Event Company. Todos os direitos reservados.</p>
+      </footer>
+  
+</body>
+
+</html>
